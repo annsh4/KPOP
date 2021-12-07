@@ -1,0 +1,35 @@
+<style>
+h1 {
+  font-size: 4rem;
+  font-family: "Luminari";
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px #aabcfe,
+             2px 2px 1px #aabcfe;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
+  font-family: "Luminari", cursive;
+  color: #aabcfe;
+  text-transform: capitalize;
+  text-align: center;
+}
+p {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  text-align: center;
+}
+body {
+  border-style: ridge;
+}
+</style>
+
+<h1 mat-dialog-title>{{data.city}}</h1>
+<body mat-dialog-content>
+  <h2>{{data.weather_state_name}}</h2>
+  <p>Humidity: {{data.humidity}}</p>
+  <p>Max temperature: {{data.max_temp}}</p>
+  <p>Min temperature: {{data.min_temp}}</p>
+  <p>Average temperature: {{data.temp}}</p>
+  <p>Visibility: {{data.visibility}}</p>
+  <p>Wind direction: {{data.wind_direction_compass}}</p>
+</body>
